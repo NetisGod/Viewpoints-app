@@ -1,0 +1,12 @@
+/* temporary styles  |need to be deleted in advance|*/
+
+#carousel-container {
+    margin-top: 45px;
+    border: 1px solid #c2e1f5;
+}
+#carousel-container img {
+    width: 1309px;
+}
+.carousel-inner img {
+    margin: 0 auto;
+}

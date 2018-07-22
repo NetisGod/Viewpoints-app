@@ -1,0 +1,10 @@
+.footer-container{
+    background-color: #7a1f5f;
+    border-color: #c2e1f5;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    position: relative;
+}
+.footer-container h4{
+    text-align: center;
+}

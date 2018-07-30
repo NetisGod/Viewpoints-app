@@ -1,21 +1,22 @@
-.main-container{
-	padding: 5px 20px;
+.main-container {
+	padding: 5px 0;
 	margin-bottom: 0;
 }
 
 .find-your-viewpoint {
 	position: relative;
 	background: #7a1f5f;
-  border: 1px solid #c2e1f5;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  z-index: 999;
+	border: 1px solid #c2e1f5;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	z-index: 999;
 }
-.find-your-viewpoint span.label{
-  display: flex;
-  align-items: center;
-  font-size: 24px;
+
+.find-your-viewpoint span.label {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
 }
 
 .find-your-viewpoint:after, .find-your-viewpoint:before {
@@ -35,9 +36,32 @@
 	border-width: 22px;
 	margin-left: -30px;
 }
+
 .find-your-viewpoint:before {
 	border-color: rgba(194, 225, 245, 0);
 	border-top-color: #c2e1f5;
 	border-width: 28px;
 	margin-left: -36px;
 }
+
+/*Adjust alt-grid*/
+
+.alt-grid.container > .row:first-child {
+	padding-top: 15px;
+	
+}
+
+.alt-grid .row {
+	margin-left: 0;
+	margin-right: 0
+}
+
+/* container adjusted */
+
+.alt-grid.container {
+	width: 100%;
+	max-width: none;
+	padding-top: 0;
+}
+
+/*Adjust alt-grid END*/

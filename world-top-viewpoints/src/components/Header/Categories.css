@@ -1,0 +1,6 @@
+.categories-dropdown > a{
+  color: #f6f6f6fc !important;
+}
+.dropdown-menu>.active>a {
+  background-color: #7a1f5f;
+}

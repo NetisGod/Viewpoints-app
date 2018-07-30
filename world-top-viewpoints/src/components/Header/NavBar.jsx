@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
 import {
-    Grid, Row, Col, Navbar, Nav, NavItem,
-    NavDropdown, MenuItem, FormGroup,
-    FormControl, Button, Jumbotron, Carousel
+    Navbar, Nav, FormGroup,
+    FormControl, Button
 } from 'react-bootstrap'
-import '../components/NavBar.css'
-
+import '../Header/NavBar.css'
+import Categories from '../Header/Categories'
+import ContributePhoto from '../Header/ContributePhoto'
 
 class NavBar extends Component {
 
+    handleChangeCategory = (filteredData, clickedCategory) => {
+        this.props.handleCategoryChange(filteredData, clickedCategory);
+    }
+
     render() {
+        const data = this.props.data,
+            clickedCategory = this.props.clickedCategory;
+
         return (
             <Navbar inverse collapseOnSelect className="navigation">
                 <Navbar.Header>
@@ -23,7 +30,7 @@ class NavBar extends Component {
 
                     <Nav pullRight>
                         <Navbar.Form>
-                            <Button type="submit" className="contribute-photo-btn">Contribute Photo</Button>
+                            <ContributePhoto />
                         </Navbar.Form>
                     </Nav>
 
@@ -36,13 +43,7 @@ class NavBar extends Component {
                             <Button type="submit btn-link" className="search-btn"><span className="glyphicon glyphicon glyphicon-search"></span></Button>
                         </Navbar.Form>
 
-                        <NavDropdown eventKey={1} title="Categories" id="basic-nav-dropdown">
-                            <MenuItem eventKey={1.1}>Popular Photos</MenuItem>
-                            <MenuItem eventKey={1.2}>Popular Viewpoints</MenuItem>
-                            <MenuItem eventKey={1.3}>Popular Locations</MenuItem>
-                            <MenuItem eventKey={1.3}>Popular Cities</MenuItem>
-                            <MenuItem eventKey={1.3}>Popular Countries</MenuItem>
-                        </NavDropdown>
+                        <Categories data={data} clickedCategory={clickedCategory} handleChangeCategory={this.handleChangeCategory} />
 
                     </Nav>
 

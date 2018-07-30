@@ -1,0 +1,30 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  /* right: 20px;
+  left: 20px; */
+  width: 100%;
+  z-index: 1000;
+  background-color: #7a1f5f;
+}
+
+.navbar-inverse {
+  border-color: #f6f6f6fc;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  color: #f6f6f6fc !important;
+}
+
+.search-btn {
+  position: relative;
+  right: 41.1px;
+  height: 34px;
+  /* border: none; */
+  transition: 0.3s linear;
+}
+
+.search-btn:hover {
+  background: #ce66b7;
+}

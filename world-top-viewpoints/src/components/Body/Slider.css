@@ -5,7 +5,7 @@
     border: 1px solid #c2e1f5;
 }
 #carousel-container img {
-    width: 1309px;
+    width: 100%;
 }
 .carousel-inner img {
     margin: 0 auto;

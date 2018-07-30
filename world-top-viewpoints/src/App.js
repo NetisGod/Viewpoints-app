@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getData();
+    this.getData(); 
   }
 
   handleCategoryChange = (filteredData, clickedCategory) => {
